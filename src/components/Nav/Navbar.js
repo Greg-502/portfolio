@@ -7,7 +7,7 @@ function Navbar() {
 
     return(
         <div>
-            <nav className="px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200">
+            <nav className="px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 ">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to=''>
                         <span className="block md:hidden visible md:invisible font-extrabold text-xl uppercase">Inicio</span>
@@ -20,7 +20,7 @@ function Navbar() {
                         </button>
                     </div>
                     <div className={`${ show ? null : 'hidden' } justify-between items-center w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-                        <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-0 md:bg-transparent">
+                        <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg shadow-lg md:shadow-none md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-0 md:bg-transparent">
                             <li>
                                 <Link to="header" spy={true} smooth={true} offset={50} duration={500} className="font-bold nav-link block py-2 pr-4 pl-3 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-gray-900 md:p-0 cursor-pointer">Inicio</Link>
                             </li>

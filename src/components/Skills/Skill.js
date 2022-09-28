@@ -1,14 +1,16 @@
 export default function Skill({ title, list }) {
     return(
-        <div className="border-t border-black pb-4 pt-1">
-            <h2 className="text-lg md:text-xl font-semibold truncate">{ title }</h2>
+        <div className="border-t border-black pb-2 md:pb-0 pt-5">
+            <h2 className="text-xl md:text-md font-bold truncate">{ title }</h2>
 
-            <ul className="pt-2 text-md md:text-lg">
+            <ul className="pt-2 text-md">
                 {
                     list.map((element) => {
                         return(
-                            <li className="text-gray-700 truncate">
-                                { element }
+                            <li className="text-gray-600 truncate"
+                                key = { element.id }
+                            >
+                                { element.languaje }
                             </li>
                         )
                     })

@@ -1,5 +1,5 @@
 import 'boxicons'
-import Social from './Social'
+import Social from './Links'
 import Address from "../../json/Address";
 
 function Contact() {
@@ -7,12 +7,12 @@ function Contact() {
     const year = `${ current.getFullYear() }`
 
     return(
-        <section id="contact" className='text-left text-gray-900 bg-yellow-300 md:bg-transparent relative flex justify-center min-h-auto px-6 md:px-12 flex-col md:py-10 pt-5'>
-            <div className="relative w-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 md:justify-evenly md:bg-yellow-300 md:rounded-xl md:p-10">
+        <section id="contact" className='items-center text-left text-gray-900 bg-yellow-300 md:bg-transparent flex justify-center min-h-auto px-6 md:px-12 flex-col md:py-10 pt-5'>
+            <div className="md:max-w-7xl w-full grid lg:grid-cols-3 md:grid-cols-2 gap-10 md:justify-evenly md:bg-yellow-300 md:rounded-xl md:p-10">
                 <div>
-                    <p className="text-purple-500 font-normal text-sm md:text-lg">Contacto</p>
-                    <h2 className="text-4xl md:text-6xl font-semibold">
-                        Más sobre mí
+                    <p className="text-purple-500 font-bold text-sm md:text-lg md:font-normal">Contacto</p>
+                    <h2 className="text-5xl md:text-7xl font-extrabold">
+                        Sobre mí
                     </h2>
                 </div>
                 

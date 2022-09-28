@@ -4,54 +4,140 @@ const Data = {
             'id':'1',
             'name':'Backend',
             'list':[
-                'Python',
-                'Django',
-                'Celery',
-                'Redis',
-                'Firebase Notifications',
-                'XML',
-                'Codeigniter',
+                {
+                    'id':'1',
+                    'languaje':'Python',
+                },
+                {
+                    'id':'2',
+                    'languaje':'Django',
+                },
+                {
+                    'id':'3',
+                    'languaje':'Celery',
+                },
+                {
+                    'id':'4',
+                    'languaje':'Redis',
+                },
+                {
+                    'id':'5',
+                    'languaje':'XML',
+                },
+                {
+                    'id':'6',
+                    'languaje':'Codeigniter',
+                },
             ]
         },
         {
             'id':'2',
             'name':'Frontend',
             'list':[
-                'Javascript',
-                'jQuery',
-                'ReactJS',
-                'Router',
-                'AJAX',
-                'Axios',
-                'Tailwind',
-                'Bootstrap',
+                {
+                    'id':'1',
+                    'languaje':'Javascript',
+                },
+                {
+                    'id':'2',
+                    'languaje':'jQuery',
+                },
+                {
+                    'id':'3',
+                    'languaje':'ReactJS',
+                },
+                {
+                    'id':'4',
+                    'languaje':'Router',
+                },
+                {
+                    'id':'5',
+                    'languaje':'AJAX',
+                },
+                {
+                    'id':'6',
+                    'languaje':'Axios',
+                },
+                {
+                    'id':'7',
+                    'languaje':'Tailwind',
+                },
+                {
+                    'id':'8',
+                    'languaje':'Bootstrap',
+                },
             ]
         },
         {
             'id':'3',
             'name':'Deployment',
             'list':[
-                'AWS',
-                'AWS lightsail',
-                'S3',
-                'Digital Ocean',
-                'Buckets Azure',
-                'GIT',
-                'Firebase',
-                'VPS',
+                {
+                    'id':'1',
+                    'languaje':'AWS',
+                },
+                {
+                    'id':'2',
+                    'languaje':'AWS lightsail',
+                },
+                {
+                    'id':'3',
+                    'languaje':'S3',
+                },
+                {
+                    'id':'4',
+                    'languaje':'Digital Ocean',
+                },
+                {
+                    'id':'5',
+                    'languaje':'Buckets Azure',
+                },
+                {
+                    'id':'6',
+                    'languaje':'GIT',
+                },
+                {
+                    'id':'7',
+                    'languaje':'Firebase',
+                },
+                {
+                    'id':'8',
+                    'languaje':'VPS',
+                },
             ]
         },
         {
             'id':'4',
-            'name':'Extras',
+            'name':'Otros',
             'list':[
-                'Paypal',
-                'Stripe',
-                'HighchartsJS',
-                'ChartJS',
-                'PowerBI',
-                'MySQL',
-                'SQL Server'
+                {
+                    'id':'1',
+                    'languaje':'Paypal',
+                },
+                {
+                    'id':'2',
+                    'languaje':'Stripe',
+                },
+                {
+                    'id':'3',
+                    'languaje':'HighchartsJS',
+                },
+                {
+                    'id':'4',
+                    'languaje':'ChartJS',
+                },
+                {
+                    'id':'5',
+                    'languaje':'PowerBI',
+                },
+                {
+                    'id':'6',
+                    'languaje':'MySQL',
+                },
+                {
+                    'id':'7',
+                    'languaje':'Google Analytics',
+                },
             ]
         },
     ]

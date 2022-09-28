@@ -3,12 +3,12 @@ import Data from "../../json/Data.js";
 
 export default function Skills() {
     return(
-        <section id="skills" className='text-left text-gray-900 bg-yellow-300 md:bg-transparent relative flex justify-center min-h-full lg:min-h-screen px-6 md:px-12 flex-col py-10 md:py-0'>
-            <div className="relative max-w-7xl md:bg-yellow-300 md:rounded-xl rounded-xl md:p-10 grid md:grid-cols-3 gap-10 md:justify-evenly">
+        <section id="skills" className='text-left text-gray-900 bg-yellow-300 items-center md:bg-transparent flex justify-center min-h-full lg:min-h-screen px-6 md:px-12 flex-col py-10 md:py-0'>
+            <div className="w-full md:bg-yellow-300 md:rounded-xl md:max-w-7xl md:p-10 grid md:grid-cols-3 gap-10 md:justify-evenly">
                 <div>
-                    <p className="text-purple-500 font-normal text-sm md:text-lg">Habilidades</p>
-                    <h2 className="text-4xl md:text-6xl font-semibold truncate">
-                        Techno
+                    <p className="text-purple-500 font-bold md:font-normal text-md md:text-lg">Habilidades</p>
+                    <h2 className="text-5xl md:text-7xl font-extrabold truncate">
+                        Techs
                     </h2>
                 </div>
                 
@@ -17,7 +17,8 @@ export default function Skills() {
                         Data.skills.map((element) => {
                             return(
                                 <Skill
-                                    title = { element.name }
+                                    key={ element.id }
+                                    title = { element.id +'/ '+ element.name }
                                     list = { element.list }
                                 />
                             ) 
