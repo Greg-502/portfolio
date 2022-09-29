@@ -1,4 +1,4 @@
-const Address = {
+const LinksList = {
     "network": [
         {
             'id':'1',
@@ -24,4 +24,4 @@ const Address = {
     ]
 }
 
-export default Address
+export default LinksList
