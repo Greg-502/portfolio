@@ -6,7 +6,7 @@ export default function Header() {
     return(
         <section id='header' className='bg-white py-8 lg:mt-14 min-h-full flex justify-center items-center px-4 md:px-12 flex-col'>
             <div className="md:grid md:grid-cols-2 md:gap-8 lg:gap-4 md:justify-evenly">
-                <div className='md:text-left tracking-tight flex justify-center flex-col lg:max-w-md'>
+                <div className='text-center md:text-left tracking-tight flex justify-center flex-col lg:max-w-md'>
                     <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Web</h1>
                     <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Developer</h1>
                     

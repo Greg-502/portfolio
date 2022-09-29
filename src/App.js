@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './components/Nav/Navbar'
 import Header from './components/Header'
 import Skills from './components/Skills/Skills'

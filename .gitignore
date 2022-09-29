@@ -19,8 +19,8 @@
 .env.test.local
 .env.production.local
 
-/images
-/json
+src/images
+src/json
 
 npm-debug.log*
 yarn-debug.log*
