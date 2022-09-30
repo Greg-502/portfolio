@@ -24,7 +24,7 @@ function Contact() {
                                     key = { element.id }
                                     name = { element.name }
                                     icon = { element.icon }
-                                    LinksList = { element.LinksList }
+                                    address = { element.address }
                                     text = { element.text }
                                 />
                             ) 

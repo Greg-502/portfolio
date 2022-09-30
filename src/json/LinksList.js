@@ -3,9 +3,9 @@ const LinksList = {
         {
             'id':'1',
             'name':'Email',
-            'icon':"gmail",
-            'address':'gp.zisrael@gmail.com',
-            'text':'gp.zisrael@gmail.com',
+            'icon':"google-cloud",
+            'address':'gp.israel@icloud.com',
+            'text':'gp.israel@icloud.com',
         },
         {
             'id':'2',
