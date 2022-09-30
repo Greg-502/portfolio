@@ -26,22 +26,22 @@ export default function Header() {
                         <p className='tracking-normal font-bold italic uppercase'>"Si me caí, es porque estaba caminando."</p>
                     </div>
                     
-                    <div className='tracking-wide'>
-                        <a
-                            href='https://portfolio-greg.s3.amazonaws.com/pdf/Gregorio+Israel+Puac+Zapeta.pdf'
+                    <div className='tracking-wide flex flex-row justify-center md:justify-start gap-3'>
+                        <motion.a 
+                            whileHover={{ scale:1.1 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                            href='https://portfolio-greg.s3.amazonaws.com/pdf/Gregorio+Puac.pdf'
                             target="_blank"
                             rel="noreferrer"
                             download
                             className="my-3 rounded-2xl text-lg md:text-md px-5 text-center cursor-pointer py-4 text-white bg-purple-500 hover:bg-purple-600 shadow-lg"
                         >
-                            Descargar CV
-                        </a>
+                            Currículum
+                        </motion.a>
                         
                         <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
-                            <button 
-                                // whileHover={{ scale:1.1 }}
-                                // transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                                className="bg-gray-100 md:bg-white my-3 hover:bg-gray-100 rounded-2xl text-lg md:text-md px-5 text-center cursor-pointer py-4 text-gray-500 ml-3">
+                            <button
+                                className="bg-gray-100 md:bg-white my-3 hover:bg-gray-100 rounded-2xl text-lg md:text-md px-5 text-center cursor-pointer py-4 text-gray-500">
                                 Contáctame
                             </button>
                         </Link>
@@ -60,7 +60,7 @@ export default function Header() {
                     className='flex justify-center items-center my-3 md:mt-0 md:px-0 px-2'>
                     <img 
                         className='shadow-lg object-cover rounded-full bg-yellow-300 lg:max-w-sm' 
-                        src={`${ process.env.REACT_APP_DEBUG === '1' ? require("../images/Imagen.png") : process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' }`} 
+                        src={`${ process.env.NODE_ENV !== 'production' ? require("../images/Imagen.png") : process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' }`} 
                         alt="Greg Puac memoji">
                     </img>
                 </motion.div>
@@ -77,7 +77,7 @@ export default function Header() {
                 className='mt-3'>
                 <img 
                     className='mx-auto w-10 md:w-12'
-                    src={`${ process.env.REACT_APP_DEBUG === '1' ? require("../images/down.gif") : process.env.REACT_APP_URL_IMAGES+'general/down.gif' }`}
+                    src={`${ process.env.NODE_ENV !== 'production' ? require("../images/down.gif") : process.env.REACT_APP_URL_IMAGES+'general/down.gif' }`}
                     alt="Scroll">
                 </img>
             </motion.div>
