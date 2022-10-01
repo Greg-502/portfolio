@@ -1,8 +1,22 @@
 import Skill from "./Skill"
-import Data from "../../json/Data.js";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import axios from 'axios'
 
 export default function Skills() {
+    const [ tech, setTech ] = useState([])
+
+    const getTechs = () => {
+        axios
+        .get("json/skills.json")
+        .then((res) => setTech(res.data))
+        .catch((err) => console.log(err))
+    }
+
+    useEffect(() => {
+        getTechs()
+    }, [])
+    
     return(
         <motion.section 
             initial={{ opacity:0, scale:0.5 }}
@@ -23,15 +37,13 @@ export default function Skills() {
                 
                 <div className="col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-10 justify-evenly">
                     {
-                        Data.skills.map((element) => {
-                            return(
-                                <Skill
-                                    key={ element.id }
-                                    title = { element.id +'/ '+ element.name }
-                                    list = { element.list }
-                                />
-                            ) 
-                        })
+                        tech.map((element) => (
+                            <Skill
+                                key={ element.id }
+                                title = { element.id +'/ '+ element.name }
+                                list = { element.list }
+                            />
+                        ))
                     }
                 </div>
             </div>

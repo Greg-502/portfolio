@@ -1,48 +1,13 @@
-import Navbar from './components/Nav/Navbar'
-import Header from './components/Header'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import ButtonToTop from './components/ButtonToTop';
-import { useState, useEffect } from 'react';
+import AppRouter from "./components/Nav/AppRouter";
+import { BrowserRouter } from 'react-router-dom'
+import Layout from "./components/Layout";
 
-function App() {
-  const [ top, setTop ] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-          setTop(true)
-      } else {
-          setTop(false)
-      }
-    })
-  }, [])
-  
-  const scrollUp = () => {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      })
-  }
-
+export default function App() {
   return (
-    <div className="App font-Manrope">
-      <Navbar />
-      <Header />
-      {
-        top && (
-          <ButtonToTop
-            action = { scrollUp }
-          />
-        )
-      }
-      <Skills />
-      <Projects />
-      <Contact />
-
-    </div>
-  );
+    <BrowserRouter>
+      <Layout>
+        <AppRouter />
+      </Layout>
+    </BrowserRouter>
+  )
 }
-
-export default App;

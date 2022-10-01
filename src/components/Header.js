@@ -60,7 +60,7 @@ export default function Header() {
                     className='flex justify-center items-center my-3 md:mt-0 md:px-0 px-2'>
                     <img 
                         className='shadow-lg object-cover rounded-full bg-yellow-300 lg:max-w-sm' 
-                        src={`${ process.env.NODE_ENV !== 'production' ? require("../images/Imagen.png") : process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' }`} 
+                        src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' : "/images/Imagen.png" }`} 
                         alt="Greg Puac memoji">
                     </img>
                 </motion.div>
@@ -77,7 +77,7 @@ export default function Header() {
                 className='mt-3'>
                 <img 
                     className='mx-auto w-10 md:w-12'
-                    src={`${ process.env.NODE_ENV !== 'production' ? require("../images/down.gif") : process.env.REACT_APP_URL_IMAGES+'general/down.gif' }`}
+                    src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/down.gif' : "/images/down.gif" }`}
                     alt="Scroll">
                 </img>
             </motion.div>

@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "name":"ecommerce",
+        "description":"Integrado con facturación electrónica y pasarela de pago de PayPal.",
+        "thumbnail":"/images/projects/ecommerce.jpg",
+                "aws_thumbnail":"https://portfolio-greg.s3.amazonaws.com/images/thumbail/ecommerce.jpg"
+    },
+    {
+        "id":"2",
+        "name":"membresias",
+        "description":"Diseñada e integrada con Stripe para aceptar pagos recurrentes.",
+        "thumbnail":"/images/projects/memberships.jpg",
+                "aws_thumbnail":"https://portfolio-greg.s3.amazonaws.com/images/thumbail/memberships.jpg"
+    },
+    {
+        "id":"3",
+        "name":"blog",
+        "description":"Acceso con Google y Facebook para la interactuar con los posts.",
+        "thumbnail":"/images/projects/blog.jpg",
+                "aws_thumbnail":"https://portfolio-greg.s3.amazonaws.com/images/thumbail/blog.jpg"
+    }
+]

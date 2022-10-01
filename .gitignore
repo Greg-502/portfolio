@@ -24,6 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 
+images/
+
 *.jpg
 *.png
 *.pdf
