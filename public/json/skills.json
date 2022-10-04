@@ -13,19 +13,23 @@
             },
             {
                 "id":"3",
-                "languaje":"Celery"
-            },
-            {
-                "id":"4",
                 "languaje":"Redis"
             },
             {
+                "id":"4",
+                "languaje":"Celery"
+            },
+            {
                 "id":"5",
-                "languaje":"XML"
+                "languaje":"Celery Beat"
             },
             {
                 "id":"6",
-                "languaje":"Codeigniter"
+                "languaje":"Email asincrónico"
+            },
+            {
+                "id":"7",
+                "languaje":"XML"
             }
         ]
     },

@@ -12,7 +12,7 @@ export default function Links({ name, icon, address, text }) {
             </a>
 
             <div className='col-span-3 flex justify-center mt-4 flex-col text-left'>
-                <h2 className="text-sm text-md truncate text-gray-600">{ name }</h2>
+                <h2 className="text-sm text-md truncate text-gray-600 tracking-wide">{ name }</h2>
                 <a
                     target="_blank"
                     rel="noreferrer"

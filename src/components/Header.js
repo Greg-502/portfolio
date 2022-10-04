@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 
 export default function Header() {
     return(
-        <section id='header' className='bg-white py-8 lg:mt-14 min-h-full flex justify-center items-center px-4 md:px-12 flex-col'>
-            <div className="md:grid md:grid-cols-2 md:gap-8 lg:gap-4 md:justify-evenly">
+        <section id='header' className='py-8 lg:mt-14 min-h-full flex justify-center items-center px-4 md:px-12 flex-col'>
+            <div className="md:grid md:grid-cols-2 md:gap-10 md:justify-evenly">
                 <motion.div 
                     initial={{ opacity:0, scale:0.5 }}
                     animate={{ opacity:1, scale:1 }}
@@ -18,8 +18,8 @@ export default function Header() {
                     <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Web</h1>
                     <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Developer</h1>
                     
-                    <div className='md:max-w-full tracking-wide mt-2 py-2 text-gray-500 text-md md:text-md font-light leading-6 md:leading-7'>
-                        <p className=''>
+                    <div className='md:max-w-full tracking-wide mt-2 py-2 text-gray-500 text-md  leading-6 md:leading-7'>
+                        <p>
                             Transeunte en este pequeño punto azul pálido, pero nunca expectante; 
                             como dijo Galeano:
                         </p>
@@ -59,7 +59,7 @@ export default function Header() {
 
                     className='flex justify-center items-center my-3 md:mt-0 md:px-0 px-2'>
                     <img 
-                        className='shadow-lg object-cover rounded-full bg-yellow-300 lg:max-w-sm' 
+                        className='shadow-lg object-cover rounded-full bg-yellow-300 lg:max-w-sm'
                         src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' : "/images/Imagen.png" }`} 
                         alt="Greg Puac memoji">
                     </img>
@@ -71,12 +71,12 @@ export default function Header() {
                 animate={{ opacity:1, scale:1 }}
                 transition={{
                     duration:0.8,
-                    delay:1.1,
+                    delay:1,
                     ease:[0, 0.71, 0.2, 1.01]
                 }}
                 className='mt-3'>
                 <img 
-                    className='mx-auto w-10 md:w-12'
+                    className='w-10 md:w-12'
                     src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/down.gif' : "/images/down.gif" }`}
                     alt="Scroll">
                 </img>

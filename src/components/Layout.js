@@ -1,5 +1,3 @@
-import Navbar from './Nav/Navbar'
-
 export default function Layout({ children }) {
     return (
         <div className="font-Manrope">
