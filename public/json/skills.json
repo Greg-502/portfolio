@@ -51,7 +51,7 @@
             },
             {
                 "id":"4",
-                "languaje":"Router"
+                "languaje":"React Router"
             },
             {
                 "id":"5",
@@ -68,6 +68,10 @@
             {
                 "id":"8",
                 "languaje":"Bootstrap"
+            },
+            {
+                "id":"9",
+                "languaje":"Framer Motion"
             }
         ]
     },

@@ -1,4 +1,3 @@
-import "boxicons"
 import { motion } from "framer-motion"
 
 export default function ButtonToTop(props) {

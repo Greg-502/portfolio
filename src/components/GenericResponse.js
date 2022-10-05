@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion, useIsPresent } from "framer-motion";
 
-export default function NotFoundPage(){
+export default function GenericResponse({ message }){
     const isPresent = useIsPresent();
 
     return(
@@ -12,8 +12,8 @@ export default function NotFoundPage(){
                     src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/NotFoundPage.png' : "/images/NotFoundPage.png" }`}
                     alt="Página no encontrada"
                 />
-                <h2 className="mt-6 text-5xl md:text-4xl mb-0 font-extrabold">Oops...</h2>
-                <h2 className="tracking-wide py-4 text-md text-gray-500">¡Esta página no existe! Vuelve al inicio.</h2>
+                <h2 className="tracking-tight mt-6 text-5xl mb-0 font-extrabold">Oops...</h2>
+                <h3 className="tracking-wide py-4 text-md text-gray-500">{ message }</h3>
 
                 <motion.div 
                     whileHover={{ scale:1.1 }}

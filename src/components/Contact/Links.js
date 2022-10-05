@@ -1,5 +1,3 @@
-import 'boxicons'
-
 export default function Links({ name, icon, address, text }) {
     return(
         <div className="border-t border-black pb-6 pt-2 grid grid-cols-4 justify-evenly">

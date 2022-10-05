@@ -10,12 +10,10 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {
-      fontFamily: {
-        'Manrope': ['Manrope'],
-        'Playfair': ['Playfair'],
-      }
-    },
+    fontFamily: {
+      Manrope: ['Manrope'],
+      Playfair: ['DM Serif Display'],
+    }
   },
   plugins: [],
 }

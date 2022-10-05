@@ -23,16 +23,11 @@ function Navbar() {
                     </div>
                     <div className={`${ show ? 'block' : 'hidden' } justify-between items-center w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
                         <ul className="flex flex-col p-4 mt-4 bg-gray-50 text-center rounded-lg shadow-lg md:shadow-none md:flex-row md:space-x-8 md:mt-0 md:text-md tracking-wide md:border-0 md:bg-transparent">
-                            <Link 
-                                to='/' 
-                                className="hidden md:block invisible md:visible nav-link py-2 pr-4 pl-3 text-gray-500 md:hover:text-gray-800 md:p-0 cursor-pointer">
-                                Inicio
-                            </Link>
                             <li>
-                                <Scroll to="skills" spy={true} smooth={true} offset={0} duration={500} className="nav-link block py-2 pr-4 pl-3 text-gray-500 hover:text-gray-800  md:p-0 cursor-pointer">Habilidades</Scroll>
+                                <Scroll to="skills" spy={true} smooth={true} offset={0} duration={500} className="nav-link block py-2 pr-4 pl-3 text-gray-500 hover:text-gray-800  md:p-0 cursor-pointer border-b-2 border-gray-200 md:border-0 ">Habilidades</Scroll>
                             </li>
                             <li>
-                                <Scroll to="projects" spy={true} smooth={true} offset={0} duration={500} className="border-b-2 border-gray-200 md:border-0 nav-link block py-2 pr-4 pl-3 text-gray-500 hover:text-gray-800  md:p-0 cursor-pointer">Proyectos</Scroll>
+                                <Scroll to="projects" spy={true} smooth={true} offset={0} duration={500} className="nav-link block py-2 pr-4 pl-3 text-gray-500 hover:text-gray-800  md:p-0 cursor-pointer">Proyectos</Scroll>
                             </li>
                         </ul>
                     </div>

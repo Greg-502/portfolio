@@ -15,15 +15,15 @@ export default function Header() {
                     }}
 
                     className='text-center md:text-left flex justify-center flex-col lg:max-w-md'>
-                    <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Web</h1>
-                    <h1 className='font-Playfair text-6xl font-bold text-gray-800 md:text-7xl lg:text-8xl'>Developer</h1>
+                    <h1 className='font-Playfair text-6xl text-gray-800 md:text-7xl lg:text-8xl'>Web</h1>
+                    <h1 className='font-Playfair text-6xl text-gray-800 md:text-7xl lg:text-8xl'>Developer</h1>
                     
-                    <div className='md:max-w-full tracking-wide mt-2 py-2 text-gray-500 text-md  leading-6 md:leading-7'>
+                    <div className='md:max-w-full tracking-wide mt-2 py-2 text-gray-500 text-md leading-6 md:leading-7'>
                         <p>
                             Transeunte en este pequeño punto azul pálido, pero nunca expectante; 
                             como dijo Galeano:
                         </p>
-                        <p className='tracking-normal font-bold italic uppercase'>"Si me caí, es porque estaba caminando."</p>
+                        <p className='font-Playfair tracking-normal text-lg font-medium italic'>— "Si me caí, es porque estaba caminando."</p>
                     </div>
                     
                     <div className='tracking-wide flex flex-row justify-center md:justify-start gap-3'>

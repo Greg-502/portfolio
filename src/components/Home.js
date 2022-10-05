@@ -5,6 +5,7 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import ButtonToTop from './ButtonToTop';
 import { useState, useEffect } from 'react';
+import 'boxicons'
 
 export default function General() {
   const [ top, setTop ] = useState(false)

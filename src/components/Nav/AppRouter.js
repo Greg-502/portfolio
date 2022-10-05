@@ -1,8 +1,7 @@
 // import { Route, Routes } from "react-router-dom";
 import React from 'react'
-import NotFoundPage from "../Errors/NotFoundPage";
+import GenericResponse from "../GenericResponse";
 import Home from '../Home'
-import Detail from "../Projects/Detail";
 
 import { AnimatePresence } from "framer-motion";
 import { useLocation, useRoutes } from "react-router-dom";
@@ -14,12 +13,12 @@ export default function AppRouter() {
             element: <Home />
         },
         {
-            path:'/detail/:projectId',
-            element: <Detail />
+            path:'/detail',
+            element: <GenericResponse message={ '¡Pronto podrás verlo desplegado!' } />
         },
         {
             path:'*',
-            element: <NotFoundPage />
+            element: <GenericResponse message={ 'Esta página no existe.' } />
         },
     ])
 
@@ -36,7 +35,7 @@ export default function AppRouter() {
         // <Routes>
         //     <Route path="/" element={ <Home /> }></Route>
         //     <Route path="/detail/:projectId" element={ <Detail /> }></Route>
-        //     <Route path="*" element={ <NotFoundPage /> }></Route>
+        //     <Route path="*" element={ <GenericResponse /> }></Route>
         // </Routes>
     )
 }
