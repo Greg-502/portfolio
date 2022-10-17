@@ -15,7 +15,10 @@ export default function Preview({id, name, description, thumbnail}) {
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         loading='lazy' 
                         className='shadow-lg object-cover max-w-full md:hover:shadow-xl' 
-                        src={ thumbnail } alt={ name }>
+                        src={ thumbnail } alt={ `Proyecto: ${ name } ` }
+                        width="100%"
+                        height="100%"
+                        >
                     </motion.img>
                 </Link>
             </div>

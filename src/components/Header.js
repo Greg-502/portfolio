@@ -61,7 +61,10 @@ export default function Header() {
                     <img 
                         className='shadow-lg object-cover rounded-full bg-yellow-300 lg:max-w-sm'
                         src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/Imagen.png' : "/images/Imagen.png" }`} 
-                        alt="Greg Puac memoji">
+                        alt="Greg Puac memoji"
+                        width="100%"
+                        height="100%"
+                        >
                     </img>
                 </motion.div>
             </div>
@@ -78,7 +81,10 @@ export default function Header() {
                 <img 
                     className='w-10 md:w-12'
                     src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/down.gif' : "/images/down.gif" }`}
-                    alt="Scroll">
+                    alt="Scroll"
+                    width="100%"
+                    height="100%"
+                    >
                 </img>
             </motion.div>
         </section>

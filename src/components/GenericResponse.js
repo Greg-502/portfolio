@@ -8,11 +8,11 @@ export default function GenericResponse({ message }){
         <section className='text-gray-800 items-center flex justify-center h-screen px-6 md:px-12 flex-col py-10 md:py-0'>
             <div className="w-full md:max-w-7xl md:p-10 items-center flex justify-center flex-col">
                 <img 
-                    className="bg-yellow-300 rounded-full shadow-lg object-cover w-72"
+                    className="bg-yellow-300 rounded-full shadow-lg object-cover w-56"
                     src={`${ process.env.NODE_ENV === 'production' ? process.env.REACT_APP_URL_IMAGES+'general/NotFoundPage.png' : "/images/NotFoundPage.png" }`}
                     alt="Página no encontrada"
                 />
-                <h2 className="tracking-tight mt-6 text-5xl mb-0 font-extrabold">Oops...</h2>
+                <h2 className="tracking-tight mt-6 text-4xl md:text-5xl mb-0 font-extrabold">Oops...</h2>
                 <h3 className="tracking-wide py-4 text-md text-gray-500">{ message }</h3>
 
                 <motion.div 
