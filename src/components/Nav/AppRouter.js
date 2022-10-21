@@ -1,4 +1,3 @@
-// import { Route, Routes } from "react-router-dom";
 import React from 'react'
 import GenericResponse from "../GenericResponse";
 import Home from '../Home'
@@ -32,10 +31,5 @@ export default function AppRouter() {
                 React.cloneElement(element, { key: location.pathname })
             }
         </AnimatePresence>
-        // <Routes>
-        //     <Route path="/" element={ <Home /> }></Route>
-        //     <Route path="/detail/:projectId" element={ <Detail /> }></Route>
-        //     <Route path="*" element={ <GenericResponse /> }></Route>
-        // </Routes>
     )
 }

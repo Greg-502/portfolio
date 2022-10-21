@@ -20,6 +20,7 @@ function Projects() {
 
     useEffect(() => {
         getProjects()
+        console.log('first')
     }, [])
 
     const isPresent = useIsPresent();

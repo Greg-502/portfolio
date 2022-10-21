@@ -1,11 +1,12 @@
 import Navbar from './Nav/Navbar'
 import Header from './Header'
 import Skills from './Skills/Skills'
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
 import ButtonToTop from './ButtonToTop';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import 'boxicons'
+
+const Projects = lazy(() => import('./Projects/Projects'))
+const Contact = lazy(() => import('./Contact/Contact'))
 
 export default function General() {
   const [ top, setTop ] = useState(false)
@@ -29,18 +30,21 @@ export default function General() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Header />
-      {
-        top && (
-          <ButtonToTop
-            action = { scrollUp }
-          />
-        )
-      }
       <Skills />
-      <Projects />
-      <Contact />
+
+      <Suspense>
+        {
+          top && (
+            <ButtonToTop
+              action = { scrollUp }
+            />
+          )
+        }
+        <Projects />
+        <Contact />
+      </Suspense>
     </>
   );
 }
